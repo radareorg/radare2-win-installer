@@ -6,6 +6,7 @@
 #define MyAppPublisher "Radare.org"
 #define MyAppURL "http://radare.org/"
 #define Radare2Location "Z:\tmp\radare2-win-installer\*"
+#define LicenceLocation "Z:\tmp\COPYING"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -22,7 +23,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-;LicenseFile=COPYING.txt
+LicenseFile={#LicenceLocation}
 OutputBaseFilename=radare2
 ;SetupIconFile=radare2.ico
 Compression=lzma
