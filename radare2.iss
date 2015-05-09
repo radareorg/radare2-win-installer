@@ -63,3 +63,7 @@ Source: {#Radare2Location} ; DestDir: "{app}"; Flags: ignoreversion recursesubdi
 
 [Registry]
 Root: HKLM; SubKey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment\"; ValueType: string; ValueName: "Path"; ValueData: "{reg:HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment\,Path};{app}" 
+Root: HKCR; SubKey: "*\shell\Radare2"; ValueType: string; ValueData: "Open in Radare2"
+Root: HKCR; SubKey: "*\shell\Radare2\command"; ValueType: string; ValueData: "C:\Program Files (x86)\Radare2\radare2.exe %1"
+Root: HKCR; SubKey: "*\shell\Radare2d"; ValueType: string; ValueData: "Open in Radare2 debugger"
+Root: HKCR; SubKey: "*\shell\Radare2d\command"; ValueType: string; ValueData: "C:\Program Files (x86)\Radare2\radare2.exe -d %1"
