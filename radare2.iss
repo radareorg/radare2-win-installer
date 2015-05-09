@@ -6,7 +6,7 @@
 #define MyAppPublisher "Radare.org"
 #define MyAppURL "http://radare.org/"
 #define Radare2Location "Z:\tmp\radare2-win-installer\*"
-#define LicenceLocation "Z:\tmp\COPYING"
+#define LicenceLocation "Z:\tmp\COPYING.LESSER"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
