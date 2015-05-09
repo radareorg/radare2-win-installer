@@ -5,6 +5,7 @@
 #define MyAppVersion "Radare2-w32-0.9.9-git"
 #define MyAppPublisher "Radare.org"
 #define MyAppURL "http://radare.org/"
+#define Radare2Location "Z:\tmp\radare2-installer\*"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -21,7 +22,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=COPYING.txt
+;LicenseFile=COPYING.txt
 OutputBaseFilename=radare2
 ;SetupIconFile=radare2.ico
 Compression=lzma
@@ -56,7 +57,7 @@ Name: "turkish"; MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 
 [Files]
-Source: "C:\radare2-w32-0.9.9-git\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: {#Radare2Location} ; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
