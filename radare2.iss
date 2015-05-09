@@ -26,7 +26,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile={#LicenceLocation}
 OutputBaseFilename=radare2
-;SetupIconFile=radare2.ico
+SetupIconFile={#IcoLocation}
 Compression=lzma
 SolidCompression=yes
 
