@@ -5,9 +5,6 @@
 #define MyAppVersion "Radare2-w32-0.9.9-git"
 #define MyAppPublisher "Radare.org"
 #define MyAppURL "http://radare.org/"
-#define Radare2Location "Z:\tmp\radare2-win-installer\*"
-#define LicenceLocation "Z:\tmp\COPYING.LESSER"
-#define IcoLocation "Z:\tmp\radare2.ico"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
