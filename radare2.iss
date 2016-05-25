@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Radare2"
-#define MyAppVersion "Radare2-w32-0.9.9-git"
+#define MyAppVersion "Radare2-w32-0.10.3-git"
 #define MyAppPublisher "Radare.org"
 #define MyAppURL "http://radare.org/"
 
