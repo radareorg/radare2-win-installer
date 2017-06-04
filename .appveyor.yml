@@ -1,0 +1,8 @@
+# TODO Do not build on commit only one a day
+
+install:
+  - choco install -y InnoSetup
+
+build_script:
+  - set PATH=%PATH%;"C:\\Program Files (x86)\\Inno Setup 5"
+  - iscc radare2.iss /DRadare2Location=. /DLicenseLocation=README.md /DIcoLocation=radare2.ico
