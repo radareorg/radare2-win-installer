@@ -3,7 +3,6 @@
 
 #define MyAppName "radare2"
 #define MyAppPublisher "radare.org"
-#define MyAppVersion "r2-unknown"
 #define MyAppURL "http://radare.org/"
 
 [Setup]
