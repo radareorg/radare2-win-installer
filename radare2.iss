@@ -60,11 +60,11 @@ Source: {#Radare2Location} ; DestDir: "{app}"; Flags: ignoreversion recursesubdi
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
-Root: HKCU; Subkey: "Environment"; ValueType: string; ValueName: "Path"; ValueData: "{reg:HKCU\Environment,Path};{app}"; Check: NeedsAddPath(ExpandConstant('{app}'));
+Root: HKCU; Subkey: "Environment"; ValueType: string; ValueName: "Path"; ValueData: "{reg:HKCU\Environment,Path};{app}\bin"; Check: NeedsAddPath(ExpandConstant('{app}\bin'));
 Root: HKCU; SubKey: "SOFTWARE\Classes\*\shell\radare2"; ValueType: string; ValueData: "Open in Radare2"; Flags: uninsdeletekey;
-Root: HKCU; SubKey: "SOFTWARE\Classes\*\shell\radare2\command"; ValueType: string; ValueData: "cmd /k {app}\radare2.exe %1"; Flags: uninsdeletekey;
+Root: HKCU; SubKey: "SOFTWARE\Classes\*\shell\radare2\command"; ValueType: string; ValueData: "cmd /k {app}\bin\radare2.exe %1"; Flags: uninsdeletekey;
 Root: HKCU; SubKey: "SOFTWARE\Classes\*\shell\radare2d"; ValueType: string; ValueData: "Open in Radare2 debugger"; Flags: uninsdeletekey;
-Root: HKCU; SubKey: "SOFTWARE\Classes\*\shell\radare2d\command"; ValueType: string; ValueData: "cmd /k {app}\radare2.exe -d %1"; Flags: uninsdeletekey;
+Root: HKCU; SubKey: "SOFTWARE\Classes\*\shell\radare2d\command"; ValueType: string; ValueData: "cmd /k {app}\bin\radare2.exe -d %1"; Flags: uninsdeletekey;
 
 [Code]
 function NeedsAddPath(Param: string): boolean;
